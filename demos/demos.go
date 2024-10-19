@@ -1,7 +1,7 @@
 package demos
 
 type Demo interface {
-	Run()
+	Demo()
 }
 
 type DemoBuilder func() Demo

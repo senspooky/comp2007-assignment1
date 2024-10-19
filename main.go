@@ -5,7 +5,9 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/senspooky/comp2007-assignment1/aliasing"
 	"github.com/senspooky/comp2007-assignment1/demos"
+	exceptions "github.com/senspooky/comp2007-assignment1/exception"
 )
 
 const (
@@ -63,8 +65,9 @@ func main() {
 		case "expressivity":
 		case "typechecking":
 		case "exceptionhandling":
-			demo = demos.ExceptionHandlingDemo()
-		case "restrictedaliasing":
+			demo = exceptions.ExceptionDemo()
+		case "aliasing":
+			demo = aliasing.AliasingDemo()
 		default:
 			flag.Usage()
 			return
@@ -74,6 +77,6 @@ func main() {
 	}
 
 	for _, demo := range toRun {
-		demo.Run()
+		demo.Demo()
 	}
 }

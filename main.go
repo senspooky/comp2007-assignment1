@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/senspooky/comp2007-assignment1/abstraction"
 	"github.com/senspooky/comp2007-assignment1/aliasing"
 	"github.com/senspooky/comp2007-assignment1/demos"
 	exceptions "github.com/senspooky/comp2007-assignment1/exception"
@@ -62,6 +63,7 @@ func main() {
 		case "datatypes":
 		case "syntaxdesign":
 		case "abstraction":
+			demo = abstraction.AbstractionDemo()
 		case "expressivity":
 		case "typechecking":
 		case "exceptionhandling":

@@ -44,7 +44,7 @@ func main() {
 		fmt.Fprintf(flag.CommandLine.Output(), "   %s -%s %s %s\n", os.Args[0], demoFlag, "simplicity", "orthogonality")
 		fmt.Fprintf(flag.CommandLine.Output(), "   %s %s %s\n", os.Args[0], "simplicity", "orthogonality")
 	}
-	flag.Var(&demoFlags, demoFlag, fmt.Sprintf("`Names of the demos to run` which is one or more of the following, seperated by a space: simplicity, orthogonality, datatypes, syntaxdesign, abstraction, expressivity, typechecking, exceptionhandling or restrictedaliasing. The \"-%s\" flag is optional.", demoFlag))
+	flag.Var(&demoFlags, demoFlag, fmt.Sprintf("`Names of the demos to run` which is one or more of the following, seperated by a space: simplicityorthogonality, datatypes, syntax, abstraction, expressivity, typechecking, exceptionhandling. The \"-%s\" flag is optional.", demoFlag))
 	flag.Parse()
 	// default
 	for _, arg := range flag.Args() {

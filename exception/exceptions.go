@@ -5,7 +5,6 @@ import (
 	"fmt"
 
 	"github.com/senspooky/comp2007-assignment1/demos"
-	"github.com/senspooky/comp2007-assignment1/formatter"
 )
 
 type exceptionHandling struct{}
@@ -15,18 +14,16 @@ func ExceptionDemo() demos.Demo {
 }
 
 func (d *exceptionHandling) Demo() {
-	fmt.Println(formatter.F().Format("EXCEPTION HANDLING DEMO"))
+	main()
+}
 
-	fmt.Println(formatter.F().Format("ERRORS"))
-
+func main() {
+	fmt.Println("EXCEPTION HANDLING DEMO")
+	fmt.Println("ERRORS")
 	errorDemo()
-
 	fmt.Println()
-
-	fmt.Println(formatter.F().Format("PANICS"))
-
+	fmt.Println("PANICS")
 	panicDemo()
-
 	fmt.Println()
 }
 

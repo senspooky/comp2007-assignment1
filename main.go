@@ -6,9 +6,13 @@ import (
 	"os"
 
 	"github.com/senspooky/comp2007-assignment1/abstraction"
-	"github.com/senspooky/comp2007-assignment1/aliasing"
 	"github.com/senspooky/comp2007-assignment1/demos"
 	exceptions "github.com/senspooky/comp2007-assignment1/exception"
+	"github.com/senspooky/comp2007-assignment1/expressivity"
+	"github.com/senspooky/comp2007-assignment1/simplicityorthogonality"
+	"github.com/senspooky/comp2007-assignment1/syntax"
+	"github.com/senspooky/comp2007-assignment1/typechecking"
+	"github.com/senspooky/comp2007-assignment1/types"
 )
 
 const (
@@ -58,18 +62,20 @@ func main() {
 		var demo demos.Demo
 
 		switch arg {
-		case "simplicity":
-		case "orthogonality":
+		case "simplicityorthogonality":
+			demo = simplicityorthogonality.SimplicityDemo()
 		case "datatypes":
-		case "syntaxdesign":
+			demo = types.DataTypesDemo()
+		case "syntax":
+			demo = syntax.SyyntaxDemo()
 		case "abstraction":
 			demo = abstraction.AbstractionDemo()
 		case "expressivity":
+			demo = expressivity.ExpressivityDemo()
 		case "typechecking":
+			demo = typechecking.TypeCheckingDemo()
 		case "exceptionhandling":
 			demo = exceptions.ExceptionDemo()
-		case "aliasing":
-			demo = aliasing.AliasingDemo()
 		default:
 			flag.Usage()
 			return

@@ -43,5 +43,45 @@
             "program": "${workspaceFolder}/main.go",
             "args": ["abstraction"]
         },
+        {
+            "name": "Expressivity",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/main.go",
+            "args": ["expressivity"]
+        },
+        {
+            "name": "Simplicity",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/main.go",
+            "args": ["simplicity"]
+        },
+        {
+            "name": "Data Types",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/main.go",
+            "args": ["datatypes"]
+        },
+        {
+            "name": "Type Checking",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/main.go",
+            "args": ["typechecking"]
+        },
+        {
+            "name": "Syntax Design",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/main.go",
+            "args": ["syntax"]
+        },
     ]
 }

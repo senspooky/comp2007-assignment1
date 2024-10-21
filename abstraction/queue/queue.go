@@ -1,6 +1,8 @@
 // package
 package queue
 
+// ...
+
 import "fmt"
 
 func New[T any](cap int) Queue[T] {
@@ -62,7 +64,7 @@ func (q *queue[T]) Dequeue() (T, error) {
 		q.front.prev = nil
 	}
 
-	return v, nil
+	return dequeuedElement.value, nil
 }
 
 func (q queue[T]) Front() (T, error) {
